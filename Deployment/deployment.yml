@@ -16,7 +16,7 @@ spec:
       # - name: aws-ecr-secret
       containers:
       - name: nodejsapp-latest
-        image: public.ecr.aws/h2w6o4h2/devops24:v39
+        image: public.ecr.aws/h2w6o4h2/devops24:v36
         resources:
           limits:
             memory: "128Mi"
