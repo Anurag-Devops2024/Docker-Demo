@@ -12,9 +12,11 @@ spec:
       labels:
         app: nodejsapp
     spec:
+      # imagePullSecrets:
+      # - name: aws-ecr-secret
       containers:
       - name: nodejsapp-latest
-        image: public.ecr.aws/h2w6o4h2/devops24:v36
+        image: public.ecr.aws/h2w6o4h2/devops24:v39
         resources:
           limits:
             memory: "128Mi"
