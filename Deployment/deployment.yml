@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejsapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nodejsapp
+  template:
+    metadata:
+      labels:
+        app: nodejsapp
+    spec:
+      containers:
+      - name: nodejsapp-latest
+        image: public.ecr.aws/h2w6o4h2/devops24:v35
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000
