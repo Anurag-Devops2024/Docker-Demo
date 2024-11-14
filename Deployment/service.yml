@@ -7,6 +7,6 @@ spec:
     app: nodejsapp
   ports:
   - port: 80
-    targetPort: 3000
+    targetPort: 2000
     nodePort: 32321
   type: NodePort
