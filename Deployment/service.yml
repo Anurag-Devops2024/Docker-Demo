@@ -6,7 +6,7 @@ spec:
   selector:
     app: nodejsapp
   ports:
-  - port: 80
+  - port: 8080
     targetPort: 3000
     #nodePort: 32321
   type: Loadbalancer
