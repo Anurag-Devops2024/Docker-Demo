@@ -1,3 +1,9 @@
+tasks:
+  - name: Import vars
+    include_vars:
+      file: ./version.txt
+      name: vardata
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,10 +22,13 @@ spec:
       # - name: aws-ecr-secret
       containers:
       - name: nodejsapp-latest
-        image: public.ecr.aws/h2w6o4h2/devops24:v36
+        image: public.ecr.aws/h2w6o4h2/devops24:"{{ vardata.firstvar.versionId }}"
+        msg: "{{ vardata.firstvar.versionId }}"
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
         - containerPort: 3000
+
+
