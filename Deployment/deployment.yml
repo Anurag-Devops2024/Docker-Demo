@@ -1,7 +1,7 @@
 tasks:
   - name: Import vars
     include_vars:
-      file: ./version.txt
+      file: ./version.yml
       name: vardata
 
 apiVersion: apps/v1
