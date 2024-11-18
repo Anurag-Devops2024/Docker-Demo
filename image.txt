@@ -1,1 +1,1 @@
-public.ecr.aws/h2w6o4h2/devops24:v98
+public.ecr.aws/h2w6o4h2/devops24:v99
