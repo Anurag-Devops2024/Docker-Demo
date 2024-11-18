@@ -22,7 +22,7 @@ spec:
       # - name: aws-ecr-secret
       containers:
       - name: nodejsapp-latest
-        image: public.ecr.aws/h2w6o4h2/devops24:"{{ vardata.firstvar.versionId }}"
+        image: my-image:87
         msg: "{{ vardata.firstvar.versionId }}"
         resources:
           limits:
