@@ -23,7 +23,6 @@ spec:
       containers:
       - name: nodejsapp-latest
         image: my-image:87
-        msg: "{{ vardata.firstvar.versionId }}"
         resources:
           limits:
             memory: "128Mi"
