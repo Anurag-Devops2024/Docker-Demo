@@ -1,9 +1,3 @@
-tasks:
-  - name: Import vars
-    include_vars:
-      file: ./version.yml
-      name: vardata
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
